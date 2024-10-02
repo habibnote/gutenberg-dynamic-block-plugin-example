@@ -1,0 +1,1 @@
+<h1 class="heading-one">Latest Posts</h1>
