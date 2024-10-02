@@ -7,13 +7,13 @@ This is a WordPress plugin. It contain a Dynamic gutenberg block to showing late
 Clone the project into WordPress plugin directory
 
 ```bash
-  git clone https://link-to-project
+  git clone https://https://github.com/habibnote/gutenberg-dynamic-block-plugin-example.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd dynamic-block
+  cd gutenberg-dynamic-block-plugin-example
 ```
 
 Install dependencies
