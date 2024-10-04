@@ -20,6 +20,6 @@ if (! defined('ABSPATH')) {
 
 function dynamic_block_init()
 {
-	register_block_type(__DIR__ . '/build');
+	register_block_type(__DIR__ . '/build/blocks/latest-post');
 }
 add_action('init', 'dynamic_block_init');
