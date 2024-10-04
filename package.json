@@ -17,6 +17,7 @@
         "@wordpress/scripts": "^30.0.2"
     },
     "dependencies": {
+        "@wordpress/icons": "^10.9.0",
         "html-react-parser": "^5.1.16"
     }
 }

@@ -43,3 +43,7 @@
   font-size: 15px;
   color: #222;
 }
+
+.active-tab {
+  border-bottom: 1px solid red;
+}
