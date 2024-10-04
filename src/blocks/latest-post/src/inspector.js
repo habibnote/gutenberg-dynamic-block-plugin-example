@@ -12,13 +12,6 @@ const Inspector = (props) => {
     const { attributes, setAttributes } = props;
     const { color } = attributes;
 
-    const colors = [
-        { name: 'Body', color: '#272435' },
-        { name: 'Primary', color: '#7351FD' },
-        { name: 'Body Light', color: '#737791' },
-        { name: 'Title', color: '#120350' },
-    ];
-
     return (
         <>
             <InspectorControls>

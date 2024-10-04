@@ -184,19 +184,6 @@ const Inspector = props => {
   const {
     color
   } = attributes;
-  const colors = [{
-    name: 'Body',
-    color: '#272435'
-  }, {
-    name: 'Primary',
-    color: '#7351FD'
-  }, {
-    name: 'Body Light',
-    color: '#737791'
-  }, {
-    name: 'Title',
-    color: '#120350'
-  }];
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.PanelBody, {
