@@ -1,0 +1,1 @@
+{"version":3,"file":"blocks/latest-post/src/style-index.css","mappings":";;;AAAA;EACI;AACJ,C","sources":["webpack://dynamic-block/./src/blocks/latest-post/assets/style.scss"],"sourcesContent":[".heading-one {\n    color: red;\n}\n"],"names":[],"sourceRoot":""}

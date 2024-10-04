@@ -12,9 +12,9 @@
         "align": ["wide", "full"]
     },
     "textdomain": "dynamic-block",
-    "editorScript": "file:./index.js",
-    "editorStyle": "file:./index.css",
-    "style": "file:./style-index.css",
-    "render": "file:./render.php",
-    "viewScript": "file:./view.js"
+    "editorScript": "file:./src/index.js",
+    "editorStyle": "file:./src/index.css",
+    "style": "file:./src/style-index.css",
+    "render": "file:./src/render.php",
+    "viewScript": "file:./src/view.js"
 }
