@@ -4,6 +4,7 @@ import {
     ColorPicker,
     TabPanel,
     Dashicon,
+    TextControl,
 } from '@wordpress/components';
 import { InspectorControls } from '@wordpress/block-editor';
 import { useState } from '@wordpress/element';
@@ -18,29 +19,51 @@ const Inspector = (props) => {
     return (
         <>
             <InspectorControls>
-                <PanelBody title="Settings" initialOpen={true}>
+                <PanelBody
+                    className="dynamic-blcok_panel-body-wrapper"
+                    initialOpen={true}
+                >
                     <TabPanel
                         activeClass="active-tab"
+                        className="db_tab-panel"
                         tabs={[
                             {
-                                name: 'tab1',
-                                title: 'Hi',
-                                className: 'tab1',
-                                icon: <Dashicon icon="art" />,
+                                name: 'settings',
+                                title: 'Settings',
+                                className: 'db_tabl-panel-item',
+                                icon: <Dashicon icon="admin-generic" />,
                             },
                             {
-                                name: 'tab2',
-                                title: 'Tab 2',
-                                className: 'tab2',
+                                name: 'style',
+                                title: 'Style',
+                                className: 'db_tabl-panel-item',
+                                icon: <Dashicon icon="art" />,
                             },
                         ]}
                     >
                         {(tab) => {
                             return (
                                 <div>
-                                    {tab.name === 'tab1' && (
+                                    {tab.name === 'settings' && (
                                         <div>
-                                            <PanelBody title={__('Styles')}>
+                                            <PanelBody initialOpen={true}>
+                                                <TextControl
+                                                    label="Posts Per Page"
+                                                    value={
+                                                        attributes.postsPerPage
+                                                    }
+                                                    onChange={(value) =>
+                                                        setAttributes({
+                                                            postsPerPage: value,
+                                                        })
+                                                    }
+                                                />
+                                            </PanelBody>
+                                        </div>
+                                    )}
+                                    {tab.name === 'style' && (
+                                        <div>
+                                            <PanelBody className="habib-panel-body">
                                                 <ColorPicker
                                                     value={color}
                                                     onChange={(newColor) =>
@@ -50,12 +73,6 @@ const Inspector = (props) => {
                                                     }
                                                 />
                                             </PanelBody>
-                                        </div>
-                                    )}
-                                    {tab.name === 'tab2' && (
-                                        <div>
-                                            <h2>Content for Tab 2</h2>
-                                            {/* Add controls for Tab 2 here */}
                                         </div>
                                     )}
                                 </div>

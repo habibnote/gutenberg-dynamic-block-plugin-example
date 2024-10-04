@@ -1,51 +1,50 @@
 /*!******************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/latest-post/assets/editor.scss ***!
   \******************************************************************************************************************************************************************************************************************************************************************/
-.latest-posts-wrapper {
-  display: flex;
-  align-items: flex-start;
-  gap: 1%;
-  width: 100%;
-  background-color: #fff;
-  padding: 10px;
+.dynamic-blcok_panel-body-wrapper .db_tab-panel .db_tabl-panel-item {
+  width: 50%;
+}
+.dynamic-blcok_panel-body-wrapper .db_tab-panel .active-tab {
+  color: #9ae9ec;
+  border-bottom: 2px solid #9ae9ec;
 }
 
-.single-post {
-  width: 32%;
+.latest-posts-wrapper {
+  display: grid;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1%;
+  max-width: 100%;
+  background-color: #fff;
+  padding: 1%;
+}
+.latest-posts-wrapper .single-post {
+  max-width: 30%;
   min-height: 480px;
   border: 1px solid #ddd;
   padding: 10px;
 }
-
-.single-post img {
+.latest-posts-wrapper .single-post img {
   width: 100%;
   height: 200px;
   margin-bottom: 5px;
 }
-
-.single-post h2 {
+.latest-posts-wrapper .single-post h2 {
   font-size: 24px;
   margin-top: 0;
   margin-bottom: 10px;
 }
-
-.single-post .meta-data {
+.latest-posts-wrapper .single-post .meta-data {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-
-.single-post .meta-data span {
+.latest-posts-wrapper .single-post .meta-data span {
   font-size: 14px;
 }
-
-.single-post p {
+.latest-posts-wrapper .single-post p {
   font-size: 15px;
   color: #222;
-}
-
-.active-tab {
-  border-bottom: 1px solid red;
 }
 
 /*# sourceMappingURL=index.css.map*/
