@@ -3,10 +3,15 @@ import { useBlockProps } from '@wordpress/block-editor';
 import { useSelect } from '@wordpress/data';
 import { store as coreDataStore } from '@wordpress/core-data';
 import parse from 'html-react-parser';
+import Inspector from './inspector';
 
 import '../assets/editor.scss';
 
-export default function Edit() {
+export default function Edit(props) {
+    //get attributes
+    const { attributes, setAttributes } = props;
+    const { color } = attributes;
+
     //Fetch posts with query
     const posts = useSelect((select) => {
         const query = {
@@ -40,36 +45,41 @@ export default function Edit() {
     );
 
     return (
-        <div {...useBlockProps()}>
-            <div className="latest-posts-wrapper">
-                {posts &&
-                    posts.map((post, index) => (
-                        <>
-                            <article key={index} className="single-post">
-                                {mediaItems[index] && (
-                                    <>
-                                        <img
-                                            src={mediaItems[index].source_url}
-                                            alt={mediaItems[index].alt_text}
-                                        />
-                                    </>
-                                )}
+        <>
+            <Inspector {...props} />
+            <div {...useBlockProps()}>
+                <div className="latest-posts-wrapper">
+                    {posts &&
+                        posts.map((post, index) => (
+                            <>
+                                <article key={index} className="single-post">
+                                    {mediaItems[index] && (
+                                        <>
+                                            <img
+                                                src={
+                                                    mediaItems[index].source_url
+                                                }
+                                                alt={mediaItems[index].alt_text}
+                                            />
+                                        </>
+                                    )}
 
-                                <h2>{post.title.rendered}</h2>
-                                <div className="meta-data">
-                                    <span>{post.date}</span>|
-                                    <span>
-                                        By <a href="#">Md. Habib</a>
-                                    </span>
-                                </div>
-                                {parse(post.excerpt.rendered)}
-                                <div>
-                                    <a href={post.link}>Read More</a>
-                                </div>
-                            </article>
-                        </>
-                    ))}
+                                    <h2>{post.title.rendered}</h2>
+                                    <div className="meta-data">
+                                        <span>{post.date}</span>|
+                                        <span>
+                                            By <a href="#">Md. Habib</a>
+                                        </span>
+                                    </div>
+                                    {parse(post.excerpt.rendered)}
+                                    <div>
+                                        <a href={post.link}>Read More</a>
+                                    </div>
+                                </article>
+                            </>
+                        ))}
+                </div>
             </div>
-        </div>
+        </>
     );
 }
