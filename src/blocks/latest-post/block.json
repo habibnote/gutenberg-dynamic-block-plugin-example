@@ -9,7 +9,7 @@
     "example": {},
     "supports": {
         "html": false,
-        "align": ["wide", "full"]
+        "align": ["full"]
     },
     "textdomain": "dynamic-block",
     "editorScript": "file:./src/index.js",

@@ -14,11 +14,9 @@ const Inspector = (props) => {
     const { attributes, setAttributes } = props;
     const { color } = attributes;
 
-    // const [activeTab, setActiveTab] = useState();
-
     return (
         <>
-            <InspectorControls>
+                <InspectorControls>
                 <PanelBody
                     className="dynamic-blcok_panel-body-wrapper"
                     initialOpen={true}

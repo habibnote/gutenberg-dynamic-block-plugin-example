@@ -225,9 +225,6 @@ const Inspector = props => {
   const {
     color
   } = attributes;
-
-  // const [activeTab, setActiveTab] = useState();
-
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.PanelBody, {
@@ -3359,7 +3356,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((module) => {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"dynamic-block/latest-posts","version":"0.1.0","title":"Latest Posts","icon":"welcome-widgets-menus","description":"This block is responsible to showing latest block posts","example":{},"supports":{"html":false,"align":["wide","full"]},"textdomain":"dynamic-block","editorScript":"file:./src/index.js","editorStyle":"file:./src/index.css","style":"file:./src/style-index.css","render":"file:./src/render.php","viewScript":"file:./src/view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"dynamic-block/latest-posts","version":"0.1.0","title":"Latest Posts","icon":"welcome-widgets-menus","description":"This block is responsible to showing latest block posts","example":{},"supports":{"html":false,"align":["full"]},"textdomain":"dynamic-block","editorScript":"file:./src/index.js","editorStyle":"file:./src/index.css","style":"file:./src/style-index.css","render":"file:./src/render.php","viewScript":"file:./src/view.js"}');
 
 /***/ })
 

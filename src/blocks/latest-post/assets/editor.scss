@@ -1,9 +1,8 @@
 @import 'inspector';
 
 .latest-posts-wrapper {
-    display: grid;
+    display: flex;
     align-items: flex-start;
-    flex-wrap: wrap;
     gap: 1%;
     max-width: 100%;
     background-color: #fff;
